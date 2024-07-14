@@ -67,7 +67,7 @@ main {
 }
 
 .section-cards {
-  background-color: grey;
+  /* background-color: grey; */
 }
 
 .cards-about {
@@ -89,14 +89,13 @@ main {
 .card2,
 .card3 {
   display: flex;
-  /* justify-content: center; */
-  background-color: blue;
+  /* justify-content: flex-start; */
+  /* background-color: blue; */
   flex-direction: column;
   height: 600px;
   width: 350px;
   gap: 50px;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
 }
 
 .card1 img,
@@ -104,11 +103,16 @@ main {
 .card3 img {
   width: 340px;
 }
-.cards .envio-gratis {
-  border-radius: 10px;
-  background-color: green;
+.envio-gratis {
+  display: flex;
+  /* width: 100%; */
   color: white;
-  font-size: 20px;
+}
+
+.envio {
+  background-color: green;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 .card1-bottom,
@@ -119,23 +123,26 @@ main {
   align-items: center;
   flex-direction: column;
   gap: 10px;
-  color: white;
+  color: black;
 }
 
 .button {
   padding: 10px 25px;
   border-radius: 13px;
   border: none;
+  background-color: #1f3c57;
+  color: white;
 }
 .section-beneficios {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: dimgrey;
+  background-color: #1f3c57;
   flex-direction: column;
   height: 40vh;
   width: 100%;
   gap: 35px;
+  color: #ffffff;
 }
 
 .input-container {
@@ -146,6 +153,7 @@ main {
   border-radius: 10px;
   justify-content: space-between;
   gap: 20px;
+  color: #444444;
 }
 
 .input-container input {
@@ -159,4 +167,42 @@ main {
 .input-container i {
   padding: 10px;
   font-size: 30px;
+}
+
+footer {
+  width: 100%;
+  color: #1f3c57;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  padding: 50px;
+}
+
+.categorias {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.redes {
+  display: flex;
+  height: 50%;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 35px;
+  gap: 70px;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
 }
