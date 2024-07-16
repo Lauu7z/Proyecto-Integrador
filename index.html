@@ -13,16 +13,14 @@
   <body>
     <header>
       <div class="logo">
-        <img
-          src="/assets/313403958_484983180339391_1755816712222885182_n.jpg"
-          alt=""
-        />
+        <img src="/assets/logo.png" alt="" />
       </div>
 
       <div class="navbar">
         <ul class="navbar-list">
           <li><a href="">Inicio</a></li>
           <li><a href="">Novedades</a></li>
+          <li><a href="login.html">Login</a></li>
         </ul>
       </div>
     </header>
@@ -30,25 +28,23 @@
     <main>
       <section class="hero">
         <div class="hero-about">
-          <h2>electronica</h2>
-          <h1>Marstech</h1>
-          <p>
+          <h2 class="hero-subtitle">Computacion</h2>
+          <h1 class="hero-title">Lautech</h1>
+          <p class="hero-parrafo">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga,
             iste. Voluptatem illum laboriosam nesciunt nam eius esse, atque
             officiis quas ipsa non harum, deserunt tempora veritatis aspernatur
             eos earum vero.
           </p>
         </div>
-        <img
-          class="hero-logo"
-          src="/assets/313403958_484983180339391_1755816712222885182_n.jpg"
-          alt=""
-        />
+        <div class="hero-logo">
+          <img src="assets/logo.png" />
+        </div>
       </section>
 
       <section class="section-cards">
         <div class="cards-about">
-          <h1>productos mas vendidos</h1>
+          <h3>Productos mas vendidos</h3>
           <div class="cards">
             <div class="card1">
               <div class="envio-gratis">
@@ -60,8 +56,8 @@
                 <img src="/assets/5600g.png" alt="" />
               </div>
               <div class="card1-bottom">
-                <h2>hola</h2>
-                <p>$$$</p>
+                <h2>Ryzen 5 5000</h2>
+                <p>$ 180.000</p>
                 <button class="button">COMPRAR</button>
               </div>
             </div>
@@ -75,8 +71,8 @@
                 <img src="/assets/i512400f.png" alt="" />
               </div>
               <div class="card2-bottom">
-                <h2>hola</h2>
-                <p>$$$</p>
+                <h2>i5 12400F</h2>
+                <p>$ 210.000</p>
                 <button class="button">COMPRAR</button>
               </div>
             </div>
@@ -90,8 +86,8 @@
                 <img src="/assets/3060TiX2_set.png" alt="" />
               </div>
               <div class="card3-bottom">
-                <h2>hola</h2>
-                <p>$$$</p>
+                <h2>RTX 3060 Inno3D 12GB</h2>
+                <p>$ 310.000</p>
                 <button class="button">COMPRAR</button>
               </div>
             </div>
@@ -105,11 +101,11 @@
           ¿Querés recibir nuestras ofertas? ¡Registrate ya mismo y comenzá a
           disfrutarlas!
         </p>
-        <div class="input-container">
-          <input type="email" placeholder="Enter your email" />
-
+        <!-- <input type="email" placeholder="Enter your email" /> -->
+        <form class="input-container">
+          <input type="email" name="email" id="email" />
           <i class="fa-solid fa-arrow-right"></i>
-        </div>
+        </form>
       </section>
 
       <footer>
@@ -130,12 +126,21 @@
             <ul class="footer-list">
               <li><i class="fa-brands fa-whatsapp"></i> Whatsapp</li>
               <li><i class="fa-solid fa-phone"></i> Telefono</li>
-              <li><i class="fa-regular fa-envelope"></i> Mail</li>
+              <li class="formulario">
+                <i class="fa-regular fa-envelope"></i>
+                <form class="form">
+                  <label for="email">Mandanos un mail</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="laureano@gmail.com"
+                  />
+                </form>
+              </li>
               <li><i class="fa-solid fa-location-dot"></i> Direccion</li>
               <li></li>
             </ul>
           </div>
-
           <div class="categorias">
             <h3 class="h3">Sigamos Conectados</h3>
             <div class="redes">
@@ -145,6 +150,7 @@
             </div>
           </div>
         </section>
+        <div class="iframe-mapa"></div>
       </footer>
     </main>
   </body>
