@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Electro</title>
     <link rel="stylesheet" href="/assets/styles.css" />
+    <link rel="stylesheet" href="/assets/animaciones.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -17,24 +18,24 @@
       </div>
 
       <div class="navbar">
+        <input type="checkbox" id="toggle-menu" />
+        <label for="toggle-menu"><i class="fa-solid fa-bars"></i></label>
         <ul class="navbar-list">
-          <li><a href="">Inicio</a></li>
-          <li><a href="">Novedades</a></li>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#novedades">Novedades</a></li>
           <li><a href="login.html">Login</a></li>
         </ul>
       </div>
     </header>
 
-    <main>
+    <main id="inicio">
       <section class="hero">
         <div class="hero-about">
           <h2 class="hero-subtitle">Computacion</h2>
           <h1 class="hero-title">Lautech</h1>
           <p class="hero-parrafo">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga,
-            iste. Voluptatem illum laboriosam nesciunt nam eius esse, atque
-            officiis quas ipsa non harum, deserunt tempora veritatis aspernatur
-            eos earum vero.
+            En Lautech tenemos todo lo que necesitas relacionado en electronica
+            para equipar tu oficina o estudio.
           </p>
         </div>
         <div class="hero-logo">
@@ -42,18 +43,14 @@
         </div>
       </section>
 
-      <section class="section-cards">
+      <section id="novedades">
         <div class="cards-about">
-          <h3>Productos mas vendidos</h3>
+          <h3>Novedades</h3>
           <div class="cards">
             <div class="card1">
-              <div class="envio-gratis">
-                <div class="envio">
-                  <span>ENVIO GRATIS</span>
-                </div>
-              </div>
+              <span class="envio-gratis">ENVIO GRATIS</span>
               <div class="img">
-                <img src="/assets/img/5600g.png" alt="" />
+                <img src="/assets/img/5600g.png" alt="Ryzen 5 5600g" />
               </div>
               <div class="card1-bottom">
                 <h2>Ryzen 5 5000</h2>
@@ -62,11 +59,7 @@
               </div>
             </div>
             <div class="card2">
-              <div class="envio-gratis">
-                <div class="envio">
-                  <span>ENVIO GRATIS</span>
-                </div>
-              </div>
+              <span class="envio-gratis">ENVIO GRATIS</span>
               <div class="img">
                 <img src="/assets/img/i512400f.png" alt="" />
               </div>
@@ -77,11 +70,7 @@
               </div>
             </div>
             <div class="card3">
-              <div class="envio-gratis">
-                <div class="envio">
-                  <span>ENVIO GRATIS</span>
-                </div>
-              </div>
+              <span class="envio-gratis">ENVIO GRATIS</span>
               <div class="img">
                 <img src="/assets/img/3060TiX2_set.png" alt="" />
               </div>
@@ -110,7 +99,7 @@
 
       <footer>
         <section class="contact">
-          <div class="categorias">
+          <div class="categoria1">
             <h3 class="h3">Categorias</h3>
             <ul class="footer-list">
               <li><a href="#">Inicio</a></li>
@@ -121,7 +110,7 @@
             </ul>
           </div>
 
-          <div class="categorias">
+          <div class="categoria2">
             <h3 class="h3">Contactanos</h3>
             <ul class="footer-list">
               <li><i class="fa-brands fa-whatsapp"></i> Whatsapp</li>
@@ -141,16 +130,31 @@
               <li></li>
             </ul>
           </div>
-          <div class="categorias">
-            <h3 class="h3">Sigamos Conectados</h3>
-            <div class="redes">
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-twitter"></i>
+          <div class="categoria3">
+            <div class="categoria-about">
+              <h3 class="h3">Sigamos Conectados</h3>
+              <div class="redes">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+              </div>
             </div>
           </div>
         </section>
-        <div class="iframe-mapa"></div>
+        <div class="iframe-mapa">
+          <div style="width: 100%">
+            <iframe
+              width="100%"
+              height="600"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=cafferata%20rosario+(Lautech)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              ><a href="https://www.gps.ie/car-satnav-gps/">Sat Navs</a></iframe
+            >
+          </div>
+        </div>
       </footer>
     </main>
   </body>
