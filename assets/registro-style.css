@@ -119,3 +119,18 @@ input {
   text-decoration: none;
   color: black;
 }
+
+@media (max-width: 768px) {
+  .container {
+    height: 80%;
+    width: 95%;
+  }
+  .list-password {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .formulario input {
+    height: auto;
+  }
+}

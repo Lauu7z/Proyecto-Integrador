@@ -128,9 +128,15 @@ input {
 }
 
 @media (max-width: 768px) {
+  .container {
+    height: 80%;
+  }
   .list-password {
     flex-direction: column;
-    width: 100%;
     gap: 10px;
+  }
+
+  .formulario input {
+    height: auto;
   }
 }
