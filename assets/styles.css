@@ -14,7 +14,8 @@ header {
   justify-content: space-between;
   position: fixed;
   width: 100%;
-  padding: 0px 30px;
+  padding: 0px 40px;
+  box-shadow: 0px 3px 40px 0px;
 }
 
 .navbar {
@@ -24,7 +25,7 @@ header {
 
 .navbar-list {
   display: flex;
-  gap: 40px;
+  gap: 80px;
 }
 
 .navbar-list li,
@@ -37,6 +38,7 @@ header {
 
 .logo {
   display: flex;
+  padding: 2px;
 }
 
 #toggle-menu {
@@ -106,6 +108,16 @@ main {
 #novedades {
   background-color: white;
   width: 100%;
+}
+
+.t-novedades {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  color: #1f3c57;
+  font-weight: 500;
+  border-bottom: 2px solid #1f3c57;
+  width: 80%;
 }
 
 .cards-about {
@@ -214,7 +226,7 @@ footer {
   color: #1f3c57;
 }
 
-.contact {
+#contacto {
   display: flex;
   justify-content: space-evenly;
   padding: 10px;
@@ -235,14 +247,15 @@ footer {
 .categoria-about {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  height: 100%;
 }
 .redes {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   font-size: 35px;
-  gap: 70px;
+  gap: 40px;
+  height: 100%;
 }
 
 .footer-list {
